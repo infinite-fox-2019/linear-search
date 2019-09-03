@@ -4,16 +4,16 @@
 console.log("Linear Search")
 let linearSearch = (target, values) => {
   //write your code here
-  let count = 0
+  var count = 0
   for(let i=0; i<values.length; i++){
     if(target === values[i]){
+      return i
+    }else{
       count++
     }
   }
-  if(count === 0){
+  if(count>0){
     return -1
-  }else{
-    return count
   }
 }
 
